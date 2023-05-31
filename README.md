@@ -1,44 +1,33 @@
 # Shap_and_compas
 
+This GitHub repository contains a project dedicated to the study of the SHAP tool in the context of an educational project on COMPAS data. This application has been developed with the aim of presenting visualizations of different COMPAS project databases and making predictions.
 
 ## Context
 
-Briefly explain the project's context and its purpose. What problems does the project aim to solve or what objective does it seek to achieve?
+The project is based on COMPAS data, a dataset used to assess the likelihood of recidivism in criminal defendants. The goal of this project is to analyze the data, preprocess it, build a machine learning model for making recidivism predictions, and create an interactive application using Streamlit to visualize the results.
 
-## Repository Contents
+## Repository Structure
 
-Provide a brief description of each file and directory present in the repository. Explain how each element contributes to the project.
+The repository is organized as follows:
 
-1. **/folder1**: This folder contains files related to the front-end part of the application.
-   - *index.html*: Main file of the web application.
-   - *styles.css*: File for the visual styling of the application.
-   - *script.js*: JavaScript file for the application's logic.
+- **Notebooks**: This directory contains two notebook files:
 
-2. **/folder2**: This folder contains files related to the back-end part of the application.
-   - *server.js*: Main file of the backend server.
-   - *database.js*: File containing functions for database manipulation.
-   - *routes.js*: File defining the API routes.
+  1. **Analysis.ipynb**: This notebook is dedicated to exploratory analysis of COMPAS data. It includes steps such as data import, feature exploration, trend and correlation identification, and generation of visualizations to better understand the data.
+  
+  2. **Preprocessing_ML.ipynb**: This notebook focuses on data preprocessing, data engineering, building a machine learning model, and evaluating performance. It includes steps such as data manipulation, cleaning, feature selection, train-test split, model training, and result evaluation.
 
-3. **/folder3**: This folder contains additional resources for the project.
-   - *documentation.pdf*: Reference document describing the usage and features of the application.
-   - *images/*: Directory containing images used in the application.
+- **Streamlit**: This directory contains the necessary files for the Streamlit application:
 
-4. **/folder4**: This folder contains automated tests for the project.
-   - *test1.js*: Unit test file for the front-end part.
-   - *test2.js*: Unit test file for the back-end part.
+  1. **main.py**: This is the main file of the Streamlit application. It contains the code to create the user interface, load the trained model, collect user inputs, perform recidivism predictions, and display the results.
+  
+  2. **prediction.py**: This file contains the necessary functions to perform recidivism predictions using the trained model. It takes user-provided features and returns an estimation of the recidivism probability.
+  
+  3. **datavisualization.py**: This file contains functions to generate interactive visualizations from COMPAS data. It uses preprocessed data and provides charts and diagrams to better understand the characteristics of criminal defendants.
+  
+  4. **model.sav**: This file contains the trained and saved machine learning model. It is loaded by the Streamlit application to perform recidivism predictions.
 
-## Installation
+## Author
 
-Explain the necessary steps to install and run the project locally on the user's machine. Include any required dependencies and specific commands to execute.
+This project was developed by AMOS Constant Junior and is available on GitHub.
 
-## Usage
-
-Explain how to use the project once it is successfully installed. Provide examples of common commands or actions.
-
-## Contribution
-
-Explain how contributors can participate in the project. Provide information on how to submit issues, suggestions, or feature requests.
-
-## License
-
-Specify the license under which the project is distributed.
+**Thank you for your interest in our project!**
